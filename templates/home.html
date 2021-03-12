@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="=" ltr">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+
+    <p style="text-align: center;"><img src="https://static.cnews.fr/sites/default/files/styles/image_640_360/public/violences_conjuguales_5e96efe7a6b00.jpg?itok=jk0e5Tps" alt="" width="1500" height="100"></p>
+
+
+
+    <meta charset="utf-8">
+    {% if title %}
+    <title>Le site local de Nay - {{ title }}</title>
+    {% else %}
+    <title>Basic Structure</title>
+    {% endif %}
+
+
+
+</head>
+    <body style="background-color:powderblue;">
+        <ul>
+            <li><a href="/home">Home Page</a></li>
+            <li><a href="/about">About Page</a></li>
+        </ul>
+        {% block content %}
+        {% endblock %}
+        <!-- _____________________________________________________Tu peux tout changer ici___________________________________________________________-->
+
+        
+        
+
+    </body>
+</html>
